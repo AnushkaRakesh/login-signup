@@ -1,0 +1,45 @@
+.left-floater {
+    float: left;
+  }
+  .inline-container {
+    display: inline-block;
+    /* max-width: 400px; */
+    width: 40px;
+  }
+  
+  .inline-container > img {
+    height: auto;
+    width: 100%;
+  }
+  
+  .website-name {
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+  }
+  
+  .navigation-bars {
+    float: right;
+    margin-right: 2em;
+    width: 30%;
+  }
+  
+  .home, .signup, .login {
+    display: inline-block;
+    padding-right: 4%;
+    margin-right: 2%;
+  }
+  
+  .top-nav {
+    /* margin: 1em; */
+    background: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D);
+    display: block;
+    padding: 1em;
+    /* margin-right: 4em; */
+    position:sticky;
+    top:0;
+  }
+  
+  * {
+    overflow-x: hidden;
+  }
