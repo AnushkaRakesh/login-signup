@@ -1,26 +1,16 @@
-import React, { useState } from "react";
-// import logo from './logo.svg';
+import React from "react";
 import "./App.css";
-import { Login } from "./Login";
-import { Register } from "./Register";
 import Navbar from "./Navbar";
+import {Link} from 'react-router-dom';
+
 
 function App() {
-  const [currentForm, setCurrentForm] = useState("login");
-
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  };
-
   return (
     <>
-      <Navbar onFormSwitch={toggleForm} />
-      <div className="App">
-        {currentForm === "login" ? (
-          <Login onFormSwitch={toggleForm} />
-        ) : (
-          <Register onFormSwitch={toggleForm} />
-        )}
+      <Navbar />
+      <div className="buttons" style={{display: 'block', width:'100%'}}>
+          <button style={{float: 'left', width:'50%'}}><Link to={'/login'} style={{textDecoration: 'none'}}>Login</Link></button>
+          <button style={{float: 'left', width:'50%'}}><Link to={'/register'} style={{textDecoration: 'none'}}>Register</Link></button>
       </div>
     </>
   );

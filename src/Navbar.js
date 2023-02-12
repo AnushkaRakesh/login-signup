@@ -11,12 +11,6 @@ const Navbar = (props) => {
           </div>
           <div className="website-name">MedPad</div>
         </div>
-
-        <div className="navigation-bars">
-          <button onClick={() => props.onFormSwitch('/')} className="home">Home</button>
-          <button onClick={() => props.onFormSwitch('register')} className="signup">Register</button>
-          <button onClick={() => props.onFormSwitch('login')} className="login">Login</button>
-        </div>
       </div>
     </>
   );
